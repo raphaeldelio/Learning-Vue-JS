@@ -27,6 +27,7 @@ export default defineComponent({
 body {
   background-color: #7E88A1;
   display: flex;
+  font-family: 'Montserrat', sans-serif; /* Set the font to Montserrat */
 }
 
 .card-container {

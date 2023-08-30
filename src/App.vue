@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card-container">
     <PlanetCard v-for="planet in planets" :key="planet.name" :planet="planet" />
   </div>
 </template>
@@ -23,6 +23,16 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
+body {
+  background-color: #7E88A1;
+  display: flex;
+}
 
+.card-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
 </style>

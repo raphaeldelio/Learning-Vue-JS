@@ -1,4 +1,9 @@
 <template>
+  <div class="top-bar">
+    <h1>The Exoplanet Database!</h1>
+    <input type="text" placeholder="Search" class="search-bar" />
+  </div>
+
   <div class="card-container">
     <PlanetCard v-for="planet in planets" :key="planet.name" :planet="planet" />
   </div>
@@ -35,5 +40,21 @@ body {
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 16px;
+  outline: none;
 }
 </style>

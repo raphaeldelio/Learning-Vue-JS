@@ -19,3 +19,21 @@ export default defineComponent({
   },
 });
 </script>
+
+<style>
+.card {
+  background-color: #7AB7D1;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px;
+  width: 200px;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+}
+</style>
